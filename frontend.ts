@@ -2,7 +2,7 @@
 /**test**/
 function test_meta_codec() {
     {
-        const device_id = DeviceId.from_base_58("5hLXAcNqgiGWe1AK3PyQoV1EEdXKGhs2trb9bCJpS4e7").unwrap();
+
 
         const v: protos.IPeopleBodyContent = {
             ood_list: [to_buf(device_id).unwrap()],
