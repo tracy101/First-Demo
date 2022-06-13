@@ -14,7 +14,7 @@ function test_meta_codec() {
     }
 
     {
-        const bs = new BuckySize(63);
+        const bs = new Buckytest(63);
         const buf = to_buf(bs).unwrap();
         assert(buf.byteLength === 1);
         const decoder = new BuckySizeDecoder();
