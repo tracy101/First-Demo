@@ -3,9 +3,8 @@
 function test_meta_codec() {
     {
 
-
         const v: protos.IPeopleBodyContent = {
-            ood_list: [to_buf(device_id).unwrap()],
+            ood_list: [to_buf(device_id).unwrap().to_buf],
             name: '纳斯赛博伯',
             ood_work_mode: "standalone",
         };
